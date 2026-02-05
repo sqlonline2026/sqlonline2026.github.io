@@ -2,18 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SQL Online</title>
-</head>
-<body>
-  <h1>Welcome to SQL Online</h1>
-  <p>This website is hosted using GitHub Pages.</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Online | Learn SQL Easily</title>
 
-  <h2>Topics</h2>
-  <ul>
-    <li>SELECT</li>
-    <li>INSERT</li>
-    <li>UPDATE</li>
-    <li>DELETE</li>
-  </ul>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      background: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #0b5ed7;
+    }
+
+    /* Content Section */
+    .container {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0d6efd;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>SQL Online</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tutorials</a>
+      <a href="#">Examples</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Learn SQL the Smart Way</h2>
+    <p>Beginner to Advanced SQL tutorials with real-world examples.</p>
+    <button>Start Learning</button>
+  </section>
+
+  <!-- Features -->
+  <section class="container">
+    <div class="features">
+      <div class="card">
+        <h3>Beginner Friendly</h3>
+        <p>Easy explanations of SQL concepts like SELECT, WHERE, and JOIN.</p>
+      </div>
+
+      <div class="card">
+        <h3>Real Examples</h3>
+        <p>Practice SQL queries with real-world use cases and examples.</p>
+      </div>
+
+      <div class="card">
+        <h3>Structured Learning</h3>
+        <p>Learn step-by-step from basics to advanced SQL topics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 SQL Online. All rights reserved.
+  </footer>
+
 </body>
 </html>
