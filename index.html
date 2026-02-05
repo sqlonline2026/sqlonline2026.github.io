@@ -6,6 +6,10 @@
   <title>SQL Online | Learn SQL Easily</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -18,12 +22,12 @@
     header {
       background: #0d6efd;
       color: white;
-      padding: 20px 40px;
+      padding: 15px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 24px;
     }
 
     nav {
@@ -32,24 +36,25 @@
 
     nav a {
       color: white;
-      margin-right: 20px;
+      margin-right: 15px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
       background: white;
-      padding: 60px 40px;
+      padding: 50px 20px;
       text-align: center;
     }
 
     .hero h2 {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 10px;
     }
 
@@ -73,9 +78,9 @@
       background: #0b5ed7;
     }
 
-    /* Content Section */
+    /* Content */
     .container {
-      padding: 40px;
+      padding: 40px 20px;
       max-width: 1100px;
       margin: auto;
     }
@@ -91,11 +96,24 @@
       padding: 25px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     .card h3 {
       margin-top: 0;
       color: #0d6efd;
+    }
+
+    /* QR Section */
+    .qr-section {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ffffff;
+    }
+
+    .qr-section img {
+      width: 180px;
+      height: 180px;
     }
 
     /* Footer */
@@ -104,8 +122,23 @@
       color: #aaa;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
       font-size: 14px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 20px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 </head>
@@ -123,7 +156,7 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <h2>Learn SQL the Smart Way</h2>
     <p>Beginner to Advanced SQL tutorials with real-world examples.</p>
@@ -140,14 +173,23 @@
 
       <div class="card">
         <h3>Real Examples</h3>
-        <p>Practice SQL queries with real-world use cases and examples.</p>
+        <p>Practice SQL queries with real-world use cases.</p>
       </div>
 
       <div class="card">
         <h3>Structured Learning</h3>
-        <p>Learn step-by-step from basics to advanced SQL topics.</p>
+        <p>Step-by-step SQL learning from basics to advanced.</p>
       </div>
     </div>
+  </section>
+
+  <!-- QR Code Section -->
+  <section class="qr-section">
+    <h2>Access on Mobile</h2>
+    <p>Scan the QR code to open SQL Online instantly.</p>
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://sqlonline2026.github.io/"
+      alt="SQL Online QR Code">
   </section>
 
   <!-- Footer -->
